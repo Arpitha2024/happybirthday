@@ -3,15 +3,10 @@ const correctPassword = "bubududu";
 // enteredPassword === correctPassword
 if (true) {
     var colors = ['#C0392B', '#ECF0F1'];
-    let audioPlaying = true;
-    function stopAudioOnScroll() {
-        if (audioPlaying) {
-            const audio = document.getElementById('myAudio');
-            audio.pause();
-            audioPlaying = false;
-        }
-    }
-    window.addEventListener('scroll', stopAudioOnScroll);
+    setTimeout(() => {
+      const audio = document.getElementById('myAudio');
+      audio.play();
+    },100)
     setTimeout(() => {
         confetti({
           particleCount: 500,
