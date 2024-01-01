@@ -2,11 +2,15 @@ const correctPassword = "bubududu";
 const enteredPassword = prompt("Please enter the password:");
 // enteredPassword === correctPassword
 if (enteredPassword === correctPassword) {
-    var colors = ['#C0392B', '#ECF0F1'];
+    const audio = document.getElementById('myAudio');
+    function playAudio() {
+        audio.play();
+    }
     setTimeout(() => {
-      const audio = document.getElementById('myAudio');
-      audio.play();
-    },100)
+    playAudio();
+    }, 500);
+
+    var colors = ['#C0392B', '#ECF0F1'];
     setTimeout(() => {
         confetti({
           particleCount: 500,
