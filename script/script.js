@@ -1,14 +1,22 @@
 const correctPassword = "bubududu";
-const enteredPassword = prompt("Please enter the password:");
+// const enteredPassword = prompt("Please enter the password:");
 // enteredPassword === correctPassword
-if (enteredPassword === correctPassword) {
-    const audio = document.getElementById('myAudio');
-    function playAudio() {
+if (true) {
+    const audio = new Audio('audio/happy-birthday-jazz-171120.mp3');
+    var audio_flag=0;
+    const playAudio = () => {  
         audio.play();
-    }
-    setTimeout(() => {
-    playAudio();
-    }, 500);
+      };
+      
+      const playButton = document.querySelector('.canvas');
+      playButton.addEventListener('click', () => {
+        if(audio_flag===0){
+            const candle = document.querySelector('.candle');
+            candle.classList.add('altered');
+            playAudio();
+            audio_flag=1;
+        }
+      });
 
     var colors = ['#C0392B', '#ECF0F1'];
     setTimeout(() => {
