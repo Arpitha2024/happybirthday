@@ -1,7 +1,7 @@
 const correctPassword = "bubududu";
-// const enteredPassword = prompt("Please enter the password:");
+const enteredPassword = prompt("Please enter the password:");
 // enteredPassword === correctPassword
-if (true) {
+if (enteredPassword === correctPassword) {
     var colors = ['#C0392B', '#ECF0F1'];
     setTimeout(() => {
       const audio = document.getElementById('myAudio');
