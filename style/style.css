@@ -128,6 +128,11 @@ body {
         background-image: linear-gradient(to right top, #c27a59, #d98f4c, #e6aa39, #e5c922, #d5eb12);
         animation: flameAnimation 0.3s infinite alternate;
       }
+      .candle.altered::before {
+        border-radius: 0;
+        width: 1px;
+        right: 4px;
+      }
       @keyframes flameAnimation {
         from {
           transform: scaleX(1);

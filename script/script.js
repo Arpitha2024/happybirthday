@@ -1,7 +1,7 @@
 const correctPassword = "bubududu";
-// const enteredPassword = prompt("Please enter the password:");
+const enteredPassword = prompt("Please enter the password:");
 // enteredPassword === correctPassword
-if (true) {
+if (enteredPassword === correctPassword) {
     const audio = new Audio('audio/happy-birthday-jazz-171120.mp3');
     var audio_flag=0;
     const playAudio = () => {  
