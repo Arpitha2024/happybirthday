@@ -310,7 +310,7 @@ body {
     justify-content: center;
     height: 100vh;
     gap: 10px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../image/_.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('../image/coverthird.jpeg');
     background-size: cover;
     background-position: center center;
     padding: 20px 0px;
