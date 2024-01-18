@@ -1,4 +1,4 @@
-const correctPassword = "bubududu";
+const correctPassword = "19012024";
 const enteredPassword = prompt("Please enter the password:");
 // enteredPassword === correctPassword
 if (enteredPassword === correctPassword) {
